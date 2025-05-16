@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop – Prajapati Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Prajapati Collection Logo" class="logo"/>
+    <h1>Prajapati Collection</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="https://youtube.com/@prajapaticollection" target="_blank">YouTube</a>
+      <a href="https://api.whatsapp.com/send/?phone=919953339522" target="_blank">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Shop Our Collection</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/product1.jpg" alt="Saree" />
+        <h3>Elegant Saree</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Elegant Saree', 999)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/product2.jpg" alt="Kurti" />
+        <h3>Stylish Kurti</h3>
+        <p>₹599</p>
+        <button onclick="addToCart('Stylish Kurti', 599)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/product3.jpg" alt="Western Wear" />
+        <h3>Western Top</h3>
+        <p>₹749</p>
+        <button onclick="addToCart('Western Top', 749)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>Cart</h2>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="cart-total">0</span></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Prajapati Collection. All rights reserved.</p>
+  </footer>
+</body>
+</html>
