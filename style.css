@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+header {
+  background: #e91e63;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.categories li {
+  background: #f8f8f8;
+  margin: 10px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.youtube iframe {
+  max-width: 100%;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
