@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prajapati Collection</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Prajapati Collection Logo" class="logo">
+  <!-- Navigation -->
+  <header class="navbar">
+    <img src="images/logo.png" alt="Prajapati Collection" class="logo"/>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="products">
-    <h2>Our Latest Products</h2>
-    <div class="product-gallery">
-      <div class="product">
-        <img src="blue-suit.jpg" alt="Blue Suit">
-        <p><strong>Elegant Blue Suit</strong><br>Price: ₹1000</p>
-      </div>
-      <div class="product">
-        <img src="yellow-suit.jpg" alt="Yellow Suit">
-        <p><strong>Sunny Yellow Suit</strong><br>Price: ₹1350</p>
-      </div>
-      <div class="product">
-        <img src="pink-suit.jpg" alt="Pink Suit">
-        <p><strong>Charming Pink Suit</strong><br>Price: ₹1449</p>
-      </div>
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <h1>Elegant • Affordable • Trendy</h1>
+    <p>Discover the latest ethnic & western wear for women.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- YouTube -->
+  <section class="video-section slide-up">
+    <h2>Watch Our Latest Videos</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed?listType=user_uploads&list=prajapaticollection"
+        title="Prajapati Collection YouTube"
+        frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: prajapaticollectionbusiness@gmail.com</p>
-    <p>Availability: 24/7 Online</p>
-    <p>Store: Online Only</p>
-  </section>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/9953339522" class="wa-float" target="_blank">Chat&nbsp;💬</a>
 
-  <a href="https://wa.me/91995339522" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Prajapati Collection. All rights reserved.</p>
+    © 2025 Prajapati Collection
   </footer>
 </body>
 </html>
