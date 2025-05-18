@@ -1,57 +1,115 @@
-
+/* Reset & Basics */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5f8;
+  color: #333;
 }
-header {
-  background-color: #f8f8f8;
-  padding: 1em;
+
+a {
+  text-decoration: none;
+  color: #c2185b;
+}
+
+h1, h2, p {
+  margin: 0 0 15px;
+}
+
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffe3ec;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.logo {
+
+.navbar .logo {
   height: 50px;
 }
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
+
+.navbar nav a {
+  margin-left: 15px;
+  font-weight: bold;
 }
-section {
-  padding: 2em;
-}
-.product-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.product {
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ffc1e3, #ffe3ec);
   text-align: center;
-  margin: 1em;
+  animation: fadeIn 1.2s ease-out;
 }
-.product img {
-  height: 250px;
-  width: auto;
-  border: 1px solid #ccc;
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #880e4f;
 }
-.whatsapp-button {
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c2185b;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Video Section */
+.video-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+/* WhatsApp Floating Button */
+.wa-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 14px;
   border-radius: 50px;
-  text-decoration: none;
   font-weight: bold;
+  z-index: 100;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #ffe3ec;
   text-align: center;
-  padding: 1em;
-  margin-top: 2em;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-up {
+  animation: fadeIn 1.5s ease-out;
 }
